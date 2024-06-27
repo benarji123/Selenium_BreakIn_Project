@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Dynamic Test Suite]">
+  <test thread-count="5" name="com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor(failed)">
+    <parameter name="Evironment" value="LOCALHOST"/>
+    <parameter name="BrowserType" value="Chrome"/>
+    <classes>
+      <class name="com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor">
+        <methods>
+          <include name="approvalCase"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setExtent"/>
+          <include name="endRoport"/>
+          <include name="agencyInspection"/>
+          <include name="assignCaseToSurveyor" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor -->
+    </classes>
+  </test> <!-- com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor(failed) -->
+  <test thread-count="5" name="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable(failed)">
+    <parameter name="Evironment" value="LOCALHOST"/>
+    <parameter name="BrowserType" value="Chrome"/>
+    <classes>
+      <class name="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable">
+        <methods>
+          <include name="approvalCase"/>
+          <include name="tearDown"/>
+          <include name="approvalConveyance"/>
+          <include name="setUp"/>
+          <include name="setExtent"/>
+          <include name="endRoport"/>
+          <include name="agencyInspection"/>
+          <include name="applyConveyance"/>
+          <include name="assignCaseToSurveyor" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable -->
+    </classes>
+  </test> <!-- com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable(failed) -->
+</suite> <!-- Failed suite [Dynamic Test Suite] -->

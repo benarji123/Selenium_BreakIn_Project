@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Dynamic_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Dynamic Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Dynamic_Test_Suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Dynamic_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Dynamic_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Dynamic_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Dynamic_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Dynamic_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Dynamic_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 2 failed,  6 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Dynamic_Test_Suite" class="hide-methods failed suite-Dynamic_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Dynamic_Test_Suite -->
+                      <a href="#" panel-name="suite-Dynamic_Test_Suite" class="show-methods failed suite-Dynamic_Test_Suite"> (show)</a> <!-- show-methods failed suite-Dynamic_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Dynamic_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor" class="method navigator-link" hash-for-method="assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...)">assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable" class="method navigator-link" hash-for-method="assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...)">assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Dynamic_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Dynamic_Test_Suite" class="hide-methods skipped suite-Dynamic_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Dynamic_Test_Suite -->
+                      <a href="#" panel-name="suite-Dynamic_Test_Suite" class="show-methods skipped suite-Dynamic_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Dynamic_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Dynamic_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor" class="method navigator-link" hash-for-method="agencyInspection">agencyInspection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable" class="method navigator-link" hash-for-method="agencyInspection">agencyInspection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable" class="method navigator-link" hash-for-method="applyConveyance">applyConveyance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor" class="method navigator-link" hash-for-method="approvalCase">approvalCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable" class="method navigator-link" hash-for-method="approvalCase">approvalCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable" class="method navigator-link" hash-for-method="approvalConveyance">approvalConveyance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Dynamic_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Dynamic_Test_Suite" class="panel Dynamic_Test_Suite">
+          <div class="suite-Dynamic_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...)">
+                  </a> <!-- assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...) -->
+                  <span class="method-name">assignCaseToSurveyor</span>
+                  <span class="parameters">({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencytype=In-house})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[text()=&apos;Assign Agency&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at com.breakin.web.automation.base.BasePage.reportFail(BasePage.java:219)
+	at com.breakin.web.automation.base.BasePage.verifyElementisVisible(BasePage.java:261)
+	at com.breakin.web.automation.pages.ManualAllocationPage.clickOnAssignAgencyButton(ManualAllocationPage.java:152)
+	at com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor(E_2_E_Fuctionality_When_Canveyance_Applicable.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Dynamic_Test_Suite-class-failed -->
+          <div class="suite-Dynamic_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...)">
+                  </a> <!-- assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...) -->
+                  <span class="method-name">assignCaseToSurveyor</span>
+                  <span class="parameters">({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencytype=In-house})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[text()=&apos;Assign Agency&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at com.breakin.web.automation.base.BasePage.reportFail(BasePage.java:219)
+	at com.breakin.web.automation.base.BasePage.verifyElementisVisible(BasePage.java:261)
+	at com.breakin.web.automation.pages.ManualAllocationPage.clickOnAssignAgencyButton(ManualAllocationPage.java:152)
+	at com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignCaseToSurveyor(AssignOpenCaseToSurveyor.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Dynamic_Test_Suite-class-failed -->
+          <div class="suite-Dynamic_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="agencyInspection">
+                  </a> <!-- agencyInspection -->
+                  <span class="method-name">agencyInspection</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.agencyInspection() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyConveyance">
+                  </a> <!-- applyConveyance -->
+                  <span class="method-name">applyConveyance</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.applyConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approvalCase">
+                  </a> <!-- approvalCase -->
+                  <span class="method-name">approvalCase</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalCase() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.agencyInspection() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approvalConveyance">
+                  </a> <!-- approvalConveyance -->
+                  <span class="method-name">approvalConveyance</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.applyConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Dynamic_Test_Suite-class-skipped -->
+          <div class="suite-Dynamic_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="agencyInspection">
+                  </a> <!-- agencyInspection -->
+                  <span class="method-name">agencyInspection</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.agencyInspection() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6 depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignCaseToSurveyor() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approvalCase">
+                  </a> <!-- approvalCase -->
+                  <span class="method-name">approvalCase</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.approvalCase() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6 depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.agencyInspection() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Dynamic_Test_Suite-class-skipped -->
+        </div> <!-- panel Dynamic_Test_Suite -->
+        <div panel-name="test-xml-Dynamic_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Dynamic Test Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor&quot;&gt;
+    &lt;parameter name=&quot;Evironment&quot; value=&quot;LOCALHOST&quot;/&gt;
+    &lt;parameter name=&quot;BrowserType&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable&quot;&gt;
+    &lt;parameter name=&quot;Evironment&quot; value=&quot;LOCALHOST&quot;/&gt;
+    &lt;parameter name=&quot;BrowserType&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable --&gt;
+&lt;/suite&gt; &lt;!-- Dynamic Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Dynamic_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Dynamic Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Dynamic_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Dynamic Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Dynamic_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Dynamic Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Dynamic_Test_Suite');
+function tableData_Dynamic_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'assignCaseToSurveyor')
+data.setCell(0, 2, 'com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor')
+data.setCell(0, 3, 39910);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'assignCaseToSurveyor')
+data.setCell(1, 2, 'com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable')
+data.setCell(1, 3, 39847);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'approvalCase')
+data.setCell(2, 2, 'com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'agencyInspection')
+data.setCell(3, 2, 'com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'approvalCase')
+data.setCell(4, 2, 'com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'applyConveyance')
+data.setCell(5, 2, 'com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'approvalConveyance')
+data.setCell(6, 2, 'com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'agencyInspection')
+data.setCell(7, 2, 'com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable')
+data.setCell(7, 3, 0);
+window.suiteTableData['Dynamic_Test_Suite']= { tableData: data, tableDiv: 'times-div-Dynamic_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Dynamic_Test_Suite">
+              </div> <!-- times-div-Dynamic_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Dynamic_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Dynamic Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Dynamic_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Dynamic_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(LOCALHOST, Chrome, public void com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignC...)</span>
+                <span class="method-start">433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...)</span>
+                <span class="method-start">5106 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=assignCaseToSurveyor status=FAILURE method=AssignOpenCaseToSurveyor.assignCaseToSur...)</span>
+                <span class="method-start">45017 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">approvalCase</span>
+                <span class="method-start">45354 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">agencyInspection</span>
+                <span class="method-start">45354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">45355 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(LOCALHOST, Chrome, public void com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyan...)</span>
+                <span class="method-start">45412 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">assignCaseToSurveyor({password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencyty...)</span>
+                <span class="method-start">47242 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=assignCaseToSurveyor status=FAILURE method=E_2_E_Fuctionality_When_Canveyance_Appli...)</span>
+                <span class="method-start">87090 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">applyConveyance</span>
+                <span class="method-start">87577 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">approvalConveyance</span>
+                <span class="method-start">87578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">approvalCase</span>
+                <span class="method-start">87579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">agencyInspection</span>
+                <span class="method-start">87579 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">87580 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">endRoport</span>
+                <span class="method-start">87596 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

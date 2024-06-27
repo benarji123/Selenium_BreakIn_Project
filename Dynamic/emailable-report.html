@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Dynamic Test Suite</th></tr>
+<tr><td><a href="#t0">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">45,036</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">42,208</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num attn">6</th><th class="num">0</th><th class="num attn">2</th><th class="num">87,244</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Dynamic Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor</td><td><a href="#m0">assignCaseToSurveyor</a></td><td rowspan="1">1692943319363</td><td rowspan="1">39910</td></tr><tr><th colspan="4">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor</td><td><a href="#m1">agencyInspection</a></td><td rowspan="1">1692943359611</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">approvalCase</a></td><td rowspan="1">1692943359611</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable</td><td><a href="#m3">assignCaseToSurveyor</a></td><td rowspan="1">1692943361499</td><td rowspan="1">39847</td></tr><tr><th colspan="4">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable</td><td><a href="#m4">agencyInspection</a></td><td rowspan="1">1692943401836</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">applyConveyance</a></td><td rowspan="1">1692943401834</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">approvalCase</a></td><td rowspan="1">1692943401836</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">approvalConveyance</a></td><td rowspan="1">1692943401835</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor</h2><h3 id="m0">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor#assignCaseToSurveyor</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencytype=In-house}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[text()=&apos;Assign Agency&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at com.breakin.web.automation.base.BasePage.reportFail(BasePage.java:219)
+	at com.breakin.web.automation.base.BasePage.verifyElementisVisible(BasePage.java:261)
+	at com.breakin.web.automation.pages.ManualAllocationPage.clickOnAssignAgencyButton(ManualAllocationPage.java:152)
+	at com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignCaseToSurveyor(AssignOpenCaseToSurveyor.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor#agencyInspection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.agencyInspection() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6 depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignCaseToSurveyor() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor#approvalCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.approvalCase() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6 depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.agencyInspection() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable</h2><h3 id="m3">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable#assignCaseToSurveyor</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencytype=In-house}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[text()=&apos;Assign Agency&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at com.breakin.web.automation.base.BasePage.reportFail(BasePage.java:219)
+	at com.breakin.web.automation.base.BasePage.verifyElementisVisible(BasePage.java:261)
+	at com.breakin.web.automation.pages.ManualAllocationPage.clickOnAssignAgencyButton(ManualAllocationPage.java:152)
+	at com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor(E_2_E_Fuctionality_When_Canveyance_Applicable.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable#agencyInspection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.agencyInspection() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable#applyConveyance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.applyConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable#approvalCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalCase() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.agencyInspection() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable#approvalConveyance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.applyConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+	at com.breakin.web.automation.testcases.test.main(test.java:9)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

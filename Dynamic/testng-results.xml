@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="0" failed="2" skipped="6">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-25T11:31:54 IST" name="Dynamic Test Suite" finished-at="2023-08-25T11:33:21 IST" duration-ms="87261">
+    <groups>
+    </groups>
+    <test started-at="2023-08-25T11:31:54 IST" name="com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor" finished-at="2023-08-25T11:32:39 IST" duration-ms="45036">
+      <class name="com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]" started-at="2023-08-25T11:31:54 IST" name="setUp" finished-at="2023-08-25T11:31:59 IST" duration-ms="4672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LOCALHOST]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignCaseToSurveyor(java.util.HashMap) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="assignCaseToSurveyor(java.util.HashMap)[pri:0, instance:com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]" started-at="2023-08-25T11:31:59 IST" name="assignCaseToSurveyor" data-provider="assignagency" finished-at="2023-08-25T11:32:39 IST" duration-ms="39910" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencytype=In-house}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Assign Agency']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Assign Agency']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:110)
+at com.breakin.web.automation.base.BasePage.reportFail(BasePage.java:219)
+at com.breakin.web.automation.base.BasePage.verifyElementisVisible(BasePage.java:261)
+at com.breakin.web.automation.pages.ManualAllocationPage.clickOnAssignAgencyButton(ManualAllocationPage.java:152)
+at com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignCaseToSurveyor(AssignOpenCaseToSurveyor.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+at com.breakin.web.automation.testcases.test.main(test.java:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignCaseToSurveyor -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]" started-at="2023-08-25T11:32:39 IST" name="tearDown" finished-at="2023-08-25T11:32:39 IST" duration-ms="334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assignCaseToSurveyor status=FAILURE method=AssignOpenCaseToSurveyor.assignCaseToSurveyor(java.util.HashMap)[pri:0, instance:com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="approvalCase()[pri:0, instance:com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]" started-at="2023-08-25T11:32:39 IST" name="approvalCase" finished-at="2023-08-25T11:32:39 IST" depends-on-methods="com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.agencyInspection" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.approvalCase() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6 depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.agencyInspection() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.approvalCase() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6 depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.agencyInspection() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+at com.breakin.web.automation.testcases.test.main(test.java:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approvalCase -->
+        <test-method signature="agencyInspection()[pri:0, instance:com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]" started-at="2023-08-25T11:32:39 IST" name="agencyInspection" finished-at="2023-08-25T11:32:39 IST" depends-on-methods="com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignCaseToSurveyor" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.agencyInspection() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6 depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignCaseToSurveyor() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.agencyInspection() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6 depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor.assignCaseToSurveyor() on instance com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+at com.breakin.web.automation.testcases.test.main(test.java:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agencyInspection -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor@4f2c9ba6]" started-at="2023-08-25T11:32:39 IST" name="closeBrowser" finished-at="2023-08-25T11:32:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor -->
+    </test> <!-- com.breakin.web.automation.testcases.AssignOpenCaseToSurveyor -->
+    <test started-at="2023-08-25T11:32:39 IST" name="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable" finished-at="2023-08-25T11:33:21 IST" duration-ms="42208">
+      <class name="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:31:54 IST" name="setExtent" finished-at="2023-08-25T11:31:54 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:32:39 IST" name="setUp" finished-at="2023-08-25T11:32:41 IST" duration-ms="1830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LOCALHOST]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor(java.util.HashMap) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="assignCaseToSurveyor(java.util.HashMap)[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:32:41 IST" name="assignCaseToSurveyor" data-provider="assignagency" finished-at="2023-08-25T11:33:21 IST" duration-ms="39847" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=1234, dropdownvalue=ICICILOMBARD, agencyname=NEW INSURANCE , username=operations, agencytype=In-house}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Assign Agency']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Assign Agency']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:110)
+at com.breakin.web.automation.base.BasePage.reportFail(BasePage.java:219)
+at com.breakin.web.automation.base.BasePage.verifyElementisVisible(BasePage.java:261)
+at com.breakin.web.automation.pages.ManualAllocationPage.clickOnAssignAgencyButton(ManualAllocationPage.java:152)
+at com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor(E_2_E_Fuctionality_When_Canveyance_Applicable.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+at com.breakin.web.automation.testcases.test.main(test.java:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignCaseToSurveyor -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:33:21 IST" name="tearDown" finished-at="2023-08-25T11:33:21 IST" duration-ms="486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assignCaseToSurveyor status=FAILURE method=E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor(java.util.HashMap)[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="applyConveyance()[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:33:21 IST" name="applyConveyance" finished-at="2023-08-25T11:33:21 IST" depends-on-methods="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.applyConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.applyConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.assignCaseToSurveyor() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+at com.breakin.web.automation.testcases.test.main(test.java:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyConveyance -->
+        <test-method signature="approvalConveyance()[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:33:21 IST" name="approvalConveyance" finished-at="2023-08-25T11:33:21 IST" depends-on-methods="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.applyConveyance" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.applyConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.applyConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+at com.breakin.web.automation.testcases.test.main(test.java:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approvalConveyance -->
+        <test-method signature="approvalCase()[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:33:21 IST" name="approvalCase" finished-at="2023-08-25T11:33:21 IST" depends-on-methods="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.agencyInspection" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalCase() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.agencyInspection() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalCase() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.agencyInspection() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+at com.breakin.web.automation.testcases.test.main(test.java:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approvalCase -->
+        <test-method signature="agencyInspection()[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:33:21 IST" name="agencyInspection" finished-at="2023-08-25T11:33:21 IST" depends-on-methods="com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalConveyance" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.agencyInspection() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.agencyInspection() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b depends on not successfully finished methods 
+[com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable.approvalConveyance() on instance com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at com.breakin.web.automation.dataprovider.GenerateData.generateTestNGXMLFromExcel(GenerateData.java:157)
+at com.breakin.web.automation.testcases.test.main(test.java:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agencyInspection -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:33:21 IST" name="closeBrowser" finished-at="2023-08-25T11:33:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="endRoport()[pri:0, instance:com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable@1c80e49b]" started-at="2023-08-25T11:33:21 IST" name="endRoport" finished-at="2023-08-25T11:33:22 IST" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endRoport -->
+      </class> <!-- com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable -->
+    </test> <!-- com.breakin.web.automation.testcases.E_2_E_Fuctionality_When_Canveyance_Applicable -->
+  </suite> <!-- Dynamic Test Suite -->
+</testng-results>
